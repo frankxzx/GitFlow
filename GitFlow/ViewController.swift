@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let myView = UIView()
     override func viewDidLoad() {
-        super.viewDidLoad()
+       super.viewDidLoad()
        view.backgroundColor = UIColor.yellowColor()
+       view.addSubview(myView)
+       myView.frame = CGRectMake(20, 20, 20, 20)
     }
 
     override func didReceiveMemoryWarning() {
